@@ -3,12 +3,15 @@ package com.example.ishan.tictactoe;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     public void dropIn(View view){
+        ImageView counter=(ImageView)view;
+        counter.setTranslationY(-1000f);
+        counter.setImageResource(R.drawable.yellow_chip);
+        counter.animate().translationYBy(1000f).setDuration(300);
 
-
-        
     }
 
     @Override
