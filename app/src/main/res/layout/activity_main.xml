@@ -136,4 +136,32 @@
 
     </GridLayout>
 
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#67d161"
+        android:padding="30dp"
+        android:visibility="invisible"
+        android:id="@+id/playAgainlayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textSize="30dp"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Again"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:onClick="playAgain" />
+    </LinearLayout>
+
 </RelativeLayout>
