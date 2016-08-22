@@ -31,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
         }
         counter.animate().translationYBy(1000f).setDuration(300);
+        for (int[] winpos: winpos){
+            if (gamestate[winpos[0]]==gamestate[winpos[1]] && gamestate[winpos[1]]==gamestate[winpos[2]]&&gamestate[winpos[0]]!=2) {
+
+            }
+        }
 
     }
 
