@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
         counter.animate().translationYBy(1000f).setDuration(300);
-        for (int[] winpo : winpos){
             if (gamestate[winpo[0]]==gamestate[winpo[1]] && gamestate[winpo[1]]==gamestate[winpo[2]]&&gamestate[winpo[0]]!=2) {
                 gameactive=false;
                 String winner = "RED";
